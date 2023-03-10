@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  background: hsl(30, 38%, 92%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: hsl(30, 38%, 92%);
+}
+
+img {
+  width: 100%;
+}
+
+svg {
+  margin-right: 0.75em;
+}
+
+.container {
+  background: hsl(0, 0%, 100%);
+  margin: 2em 1em;
+  border-radius: 1em;
+}
+
+.product__image img {
+  border-top-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.product__content {
+  margin: 1.5em;
+}
+
+.content-headline {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.product__content h1 {
+  font-family: "Fraunces", serif;
+  margin-bottom: 0.75em;
+}
+
+.content-text {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+  margin: 1.5em 0;
+}
+
+.product__price p:first-of-type {
+  font-family: "Fraunces", serif;
+  font-size: 2.25rem;
+  color: hsl(158, 36%, 37%);
+  margin-right: 0.75em;
+}
+
+.product__price p:last-of-type {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+.btn {
+  background: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 0.5em;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+btn:hover {
+  background-color: hsl(157, 62%, 19%);
+}
+
+@media screen and (min-width: 620px) {
+  .container {
+    display: flex;
+    width: 37.5rem;
+  }
+
+  .product__image {
+    width: 50%;
+  }
+
+  .product__image img {
+    content: url(images/image-product-desktop.jpg);
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 1em;
+  }
+
+  .product__content {
+    width: 50%;
+  }
+
+  .product__content h1 {
+    width: 200px;
+  }
+
+  .content-text {
+    width: 280px;
+  }
+}
